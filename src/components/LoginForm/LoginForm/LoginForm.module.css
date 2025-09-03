@@ -1,3 +1,7 @@
+.login-form {
+    font-family: var(--var-font-family);
+}
+
 .login-form form {
     display: flex;
     flex-direction: column;
