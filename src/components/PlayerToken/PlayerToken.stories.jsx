@@ -1,5 +1,5 @@
 const meta = {
-    component: Coin,
+    component: PlayerToken,
 };
 
 export default meta;
