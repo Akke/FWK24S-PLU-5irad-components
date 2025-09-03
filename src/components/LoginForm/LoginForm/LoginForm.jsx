@@ -1,12 +1,22 @@
 import styles from "./LoginForm.module.css";
 
 const LoginForm = () => {
+    const onSubmit = (e) => {
+        e.preventDefault();
+        
+        console.log("Form has been submitted");
+    }
+
     return (
-        <form action="POST" className={styles["login-form"]}>
-            <input type="text" name="username" placeholder="Username" />
-            <input type="password" name="password" placeholder="Password" />
-            <button type="submit">Login</button>
-        </form>
+        <div className={styles["login-form"]}>
+            <h1>Login</h1>
+
+            <form action="POST" onSubmit={onSubmit}>
+                <input type="text" name="username" placeholder="Username" />
+                <input type="password" name="password" placeholder="Password" />
+                <button type="submit">Sign in</button>
+            </form>
+        </div>
     );
 }
 
