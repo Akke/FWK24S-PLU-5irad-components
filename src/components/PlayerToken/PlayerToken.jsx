@@ -1,8 +1,10 @@
-import "./PlayerToken.css";
+import styles from "./PlayerToken.module.css";
 
-const PlayerToken = ({ color }) => {
+const PlayerToken = ({ color = 'black' }) => {
+    console.log(color);
+
     return (
-        <div className="player-token" style={{ color: color }}></div>
+        <div className={styles.playerToken} style={{ backgroundColor: color }}></div>
     );
 }
 

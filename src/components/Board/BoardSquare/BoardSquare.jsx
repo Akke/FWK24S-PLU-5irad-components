@@ -1,11 +1,11 @@
 import styles from "./BoardSquare.module.css"
-import Coin from "../../Coin/Coin"
+import PlayerToken from "../../PlayerToken/PlayerToken"
 
 export const BoardSquare = () => {
     return (
         <div className={styles.boardSquareContainer}>
             <div className={styles.coinContainer}>
-                <Coin color={'red'} />
+                <PlayerToken color={'red'} />
             </div>
         </div>
     )
