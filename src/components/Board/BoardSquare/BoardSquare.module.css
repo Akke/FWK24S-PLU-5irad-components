@@ -1,9 +1,10 @@
-.board-square-container{
+.boardSquareContainer {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.coin-container{
+
+.coinContainer {
     width: 29px;
     height: 29px;
     background-color: #FFE3FC;

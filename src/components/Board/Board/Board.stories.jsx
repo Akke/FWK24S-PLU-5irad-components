@@ -1,5 +1,8 @@
 import { Board } from './Board';
 
+
+console.log("Loaded")
+
 const meta = {
   component: Board,
 };
