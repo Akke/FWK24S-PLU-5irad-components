@@ -37,6 +37,6 @@ export const Default = {
   args: { tiles: tilesEmpty }
 };
 
-export const Active = {
+export const ActiveGame = {
   args: { tiles: tilesActive }
 };

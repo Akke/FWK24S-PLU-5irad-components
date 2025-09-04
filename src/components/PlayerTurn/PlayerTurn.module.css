@@ -1,0 +1,18 @@
+.playerTurn {
+    text-align: center;
+    color: var(--color-blue);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.playerName {
+    font-size: 40px;
+}
+
+.description {
+    font-size: 24px;
+}
+
+.opponent {
+    color: var(--color-hotPink);
+}

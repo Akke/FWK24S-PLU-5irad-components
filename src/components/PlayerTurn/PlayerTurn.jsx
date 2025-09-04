@@ -1,13 +1,11 @@
-import { useState } from "react";
-import "./PlayerTurn.css";
+import styles from "./PlayerTurn.module.css";
 
-const PlayerTurn = ({ username = "Player X" }) => {
-    const [isOpponent, setIsOpponent] = useState(false);
+const PlayerTurn = ({ username = "Player X", isOpponent = false }) => {
 
     return (
-        <div className={`player-turn ${isOpponent ? "opponent" : ""}`}>
-            <div className="player-name">{username}</div>
-            <div className="description">Make your move</div>
+        <div className={`${styles.playerTurn} ${isOpponent ? styles.opponent : ""}`}>
+            <div className={styles.playerName}>{username}</div>
+            <div className={styles.description}>Make your move</div>
         </div>
     );
 }

@@ -11,10 +11,10 @@ export const Default = {
   args: { tile: 0 }
 };
 
-export const Pink = {
+export const Cross = {
   args: { tile: 1 }
 };
 
-export const Blue = {
+export const Circle = {
   args: { tile: 2 }
 };
