@@ -1,11 +1,12 @@
 import styles from "./PlayerToken.module.css";
 
-const PlayerToken = ({ color = 'black' }) => {
-    console.log(color);
-
+const PlayerToken = ({ tile }) => {
     return (
-        <div className={styles.playerToken} style={{ backgroundColor: color }}></div>
+        <div
+            className={styles.playerToken}
+            style={{ backgroundColor: tile === 1 ? "pink" : "lightBlue" }}
+        />
     );
-}
+};
 
 export default PlayerToken;

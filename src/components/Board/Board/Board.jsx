@@ -1,20 +1,12 @@
 import { BoardRow } from "../BoardRow/BoardRow";
 import styles from './Board.module.css';
 
-export const Board = () => {
-    console.log("Loaded")
+export const Board = ({ tiles }) => {
     return (
         <div className={styles.boardContainer}>
-            <BoardRow />
-            <BoardRow />
-            <BoardRow />
-            <BoardRow />
-            <BoardRow />
-            <BoardRow />
-            <BoardRow />
-            <BoardRow />
-            <BoardRow />
-            <BoardRow />
+            {tiles.map((row, i) => (
+                <BoardRow key={i} row={row} />
+            ))}
         </div>
     )
 };

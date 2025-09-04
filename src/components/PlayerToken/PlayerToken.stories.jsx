@@ -1,31 +1,24 @@
 import PlayerToken from "./PlayerToken";
 
 const meta = {
-    title: "Components/PlayerToken",
+    title: "Board/PlayerToken",
     component: PlayerToken,
 };
 
 export default meta;
 
-const TokenWrapper = ({ color }) => (
+const TokenWrapper = ({ tile }) => (
     <div style={{ width: '80px', height: '80px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <PlayerToken color={color} />
+        <PlayerToken tile={tile} />
     </div>
 );
 
-export const Default = {
-    args: {
-        color: 'black',
-    },
-    render: (args) => <TokenWrapper {...args} />,
-};
-
 export const Pink = {
-    args: { color: 'pink' },
+    args: { tile: 1 },
     render: (args) => <TokenWrapper {...args} />,
 };
 
 export const Blue = {
-    args: { color: 'lightBlue' },
+    args: { tile: 2 },
     render: (args) => <TokenWrapper {...args} />,
 };
