@@ -1,0 +1,17 @@
+.restartButton {
+    background-color: pink;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.restartButton:hover {
+    background-color: hotpink;
+}

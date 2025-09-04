@@ -1,19 +1,12 @@
 import { BoardSquare } from "../BoardSquare/BoardSquare";
 import styles from './BoardRow.module.css';
 
-export const BoardRow = () => {
+export const BoardRow = ({ row }) => {
     return (
         <div className={styles.boardRowContainer}>
-            <BoardSquare />
-            <BoardSquare />
-            <BoardSquare />
-            <BoardSquare />
-            <BoardSquare />
-            <BoardSquare />
-            <BoardSquare />
-            <BoardSquare />
-            <BoardSquare />
-            <BoardSquare />
+            {row.map((tile, i) => (
+                <BoardSquare key={i} tile={tile} />
+            ))}
         </div>
     )
 };
