@@ -1,0 +1,36 @@
+.register-form {
+    font-family: var(--var-font-family);
+}
+
+.register-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.register-form h1 {
+    color: #41C9E4;
+    text-align: center;
+}
+
+.register-form form input {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #FFE3FC;
+    padding: 10px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.register-form form button {
+    background-color: #FF33EE;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    color: #FFF;
+}
