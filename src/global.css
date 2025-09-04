@@ -24,4 +24,8 @@
 
 :root {
     --var-font-family: "Inter", Tahoma;
+    --color-pink: #FFE3FC;
+    --color-hotPink: #FF33EE;
+    --color-lightBlue: #E3F6FF;
+    --color-blue: #41C9E4;
 }

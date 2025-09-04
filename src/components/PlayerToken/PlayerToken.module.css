@@ -1,5 +1,9 @@
+.playerTokenContainer {
+    height: 65%;
+    width: 65%;
+}
+
 .playerToken {
-    height: 50%;
-    width: 50%;
-    border-radius: 50%;
+    height: 100%;
+    width: 100%;
 }

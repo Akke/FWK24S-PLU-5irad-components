@@ -13,12 +13,12 @@ const TokenWrapper = ({ tile }) => (
     </div>
 );
 
-export const Pink = {
+export const Cross = {
     args: { tile: 1 },
     render: (args) => <TokenWrapper {...args} />,
 };
 
-export const Blue = {
+export const Circle = {
     args: { tile: 2 },
     render: (args) => <TokenWrapper {...args} />,
 };
