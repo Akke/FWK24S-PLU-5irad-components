@@ -5,7 +5,7 @@ export const Board = ({ tiles }) => {
     return (
         <div className={styles.boardContainer}>
             {tiles.map((row, i) => (
-                <BoardRow key={i} row={row} />
+                <BoardRow key={i} row={row} rowNumber={i} />
             ))}
         </div>
     )

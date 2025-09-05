@@ -1,4 +1,5 @@
 /** @type { import('@storybook/react-vite').Preview } */
+import BoardProvider from '../src/contexts/BoardProvider';
 import '../src/global.css';
 
 const preview = {
@@ -17,6 +18,14 @@ const preview = {
       test: "todo"
     }
   },
-};
+  decorators: [
+    (Story) => (
+      <BoardProvider>
+        {/* 👇 Decorators in Storybook also accept a function. Replace <Story/> with Story() to enable it  */}
+        <Story />
+      </BoardProvider>
+    )
+  ]
+}
 
 export default preview;
