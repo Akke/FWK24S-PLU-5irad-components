@@ -3,9 +3,12 @@
     font-family: var(--var-font-family);
     font-size: inherit;
     color: white;
-    font-weight: 400;
+    font-weight: 700;
     border: none;
     border-radius: 10px;
-    width: 300px;
+    min-width: 316px;
     height: 40px;
+}
+.createButton:hover{
+    cursor: pointer;
 }

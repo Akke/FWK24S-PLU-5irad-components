@@ -1,0 +1,47 @@
+.createNewGameContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;    
+}
+.createNewGameForm{
+    font-family: var(--var-font-family);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.createGameHeader{
+    color: #41C9E4;
+    min-width: 316px;
+    text-align: center;
+    font-family: var(--var-font-family)
+}
+.createNewGameInput{
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #FFE3FC;
+    padding: 10px;
+    font-family: inherit;
+    font-size: inherit;
+    min-width: 316px;
+}
+.joinGameButton{
+    background-color: #FF33EE;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    min-width: 316px;
+    color: #FFF;
+}
+.joinGameButton:hover{
+    cursor: pointer;
+}
+.divider {
+    border-top: 3px solid #bbb;
+    min-width: 316px;
+}

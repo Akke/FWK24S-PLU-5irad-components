@@ -1,6 +1,6 @@
 import style from './CreateNewGameButton.module.css'
 
-const CreatNewGameButton = () => {
+const CreateNewGameButton = () => {
     const handleStartGame = () =>{
         console.log('start game')
     }
@@ -11,4 +11,4 @@ const CreatNewGameButton = () => {
     )
 }
 
-export default CreatNewGameButton
+export default CreateNewGameButton
