@@ -1,7 +1,7 @@
-import style from './CreateNewGame.module.css'
+import style from './StartNewGame.module.css'
 import CreateNewGameButton from '../CreateNewGameButton/CreateNewGameButton'
 
-const CreateNewGame = () => {
+const StartNewGame = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log('Joining new lobby')
@@ -18,4 +18,4 @@ const CreateNewGame = () => {
         </div>
     )
 }
-export default CreateNewGame
+export default StartNewGame

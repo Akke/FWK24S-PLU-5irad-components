@@ -1,7 +1,7 @@
-import CreateNewGame from "./CreateNewGame";
+import StartNewGame from "./StartNewGame";
 
 const meta = {
-    component: CreateNewGame
+    component: StartNewGame
 }
 export default meta
 
