@@ -14,9 +14,9 @@ export const BoardSquare = ({ tile = 0, rowNumber, columnNumber }) => {
     }
 
     useEffect(() => {
-        if(gridData.length) {
+        if (gridData.length) {
             const tkn = getToken(rowNumber, columnNumber);
-            if(tkn) {
+            if (tkn) {
                 setToken(tkn);
             }
         }
