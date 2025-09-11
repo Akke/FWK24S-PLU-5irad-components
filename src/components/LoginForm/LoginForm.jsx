@@ -1,5 +1,8 @@
 import { useState } from "react";
 import styles from "./LoginForm.module.css";
+import Username from "./Username";
+import Password from "./Password";
+import Button from "./Button";
 
 const LoginForm = () => {
     const [username, setUsername] = useState("");
@@ -16,9 +19,9 @@ const LoginForm = () => {
             <h1>Login</h1>
 
             <form action="POST" onSubmit={onSubmit}>
-                <input type="text" name="username" placeholder="Username" onBlur={setUsername} />
-                <input type="password" name="password" placeholder="Password" onChange={setPassword} />
-                <button type="submit">Sign in</button>
+                <Username onBlur={setUsername} />
+                <Password onChange={setPassword} />
+                <Button value="Sign in" />
             </form>
         </div>
     );
