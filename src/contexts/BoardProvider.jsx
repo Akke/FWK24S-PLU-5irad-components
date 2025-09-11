@@ -7,6 +7,8 @@ const BoardProvider = ({ children }) => {
 
     const onDropToken = (tile, row, column) => {
         console.log("Tile: ", tile, "Row: ", row, " Column: ", column);
+
+        if(getToken(row, column) != null) return;
         
         setGridData(prev => [...prev, {
             [row]: {
