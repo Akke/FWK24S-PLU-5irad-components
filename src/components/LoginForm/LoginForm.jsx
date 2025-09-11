@@ -1,6 +1,9 @@
+import { useState } from "react";
 import styles from "./LoginForm.module.css";
 
 const LoginForm = () => {
+    const [username, setUsername] = useState("");
+    
     const onSubmit = (e) => {
         e.preventDefault();
         
