@@ -1,5 +1,5 @@
 import styles from "./BoardSquare.module.css"
-import PlayerToken from "../../PlayerToken/PlayerToken"
+import PlayerToken from "../PlayerToken/PlayerToken"
 
 export const BoardSquare = ({ tile = 0 }) => {
     return (
