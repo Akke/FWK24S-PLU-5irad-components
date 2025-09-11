@@ -3,7 +3,8 @@ import styles from "./LoginForm.module.css";
 
 const LoginForm = () => {
     const [username, setUsername] = useState("");
-    
+    const [password, setPassword] = useState("");
+
     const onSubmit = (e) => {
         e.preventDefault();
         
