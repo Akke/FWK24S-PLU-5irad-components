@@ -16,7 +16,7 @@ const LoginForm = () => {
             <h1>Login</h1>
 
             <form action="POST" onSubmit={onSubmit}>
-                <input type="text" name="username" placeholder="Username" />
+                <input type="text" name="username" placeholder="Username" onBlur={setUsername} />
                 <input type="password" name="password" placeholder="Password" onChange={setPassword} />
                 <button type="submit">Sign in</button>
             </form>
