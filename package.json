@@ -1,7 +1,7 @@
 {
-  "name": "test",
+  "name": "5irad-components",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,8 +12,10 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "howler": "^2.2.4",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "react-sounds": "^1.0.25"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.1",
@@ -39,7 +41,7 @@
     "vite": "^7.1.3",
     "vitest": "^3.2.4"
   },
-  "description": "",
+  "description": "Component library for a Gomoku game",
   "main": "eslint.config.js",
   "keywords": [],
   "author": "",
