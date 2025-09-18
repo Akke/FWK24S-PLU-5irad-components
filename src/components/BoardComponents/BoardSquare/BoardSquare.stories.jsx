@@ -1,4 +1,4 @@
-import { BoardSquare } from './BoardSquare';
+import BoardSquare from './BoardSquare';
 
 const meta = {
   title: 'Board/BoardSquare',

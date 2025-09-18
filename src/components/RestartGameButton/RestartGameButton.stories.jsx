@@ -1,4 +1,4 @@
-import { RestartGameButton } from './RestartGameButton';
+import RestartGameButton from './RestartGameButton';
 
 const meta = {
   title: 'Components/RestartGameButton',

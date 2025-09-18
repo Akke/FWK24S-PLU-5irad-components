@@ -1,7 +1,7 @@
-import { BoardSquare } from "../BoardSquare/BoardSquare";
+import BoardSquare from "../BoardSquare/BoardSquare";
 import styles from './BoardRow.module.css';
 
-export const BoardRow = ({ row }) => {
+const BoardRow = ({ row }) => {
     return (
         <div className={styles.boardRowContainer}>
             {row.map((tile, i) => (
@@ -10,3 +10,5 @@ export const BoardRow = ({ row }) => {
         </div>
     )
 };
+
+export default BoardRow;

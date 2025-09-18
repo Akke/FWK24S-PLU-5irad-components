@@ -1,5 +1,5 @@
 import styles from './WinScreen.module.css'
-import {RestartGameButton} from '../RestartGameButton/RestartGameButton/RestartGameButton'
+import RestartGameButton from '../RestartGameButton/RestartGameButton'
 
 const WinScreen = () => {
     return (
@@ -8,7 +8,7 @@ const WinScreen = () => {
                 <button className={styles.button}>✖</button>
                 <div className={styles.content}>
                     <h1 className={styles.text}>You won!</h1>
-                    <RestartGameButton className={styles.restartBtn}/>
+                    <RestartGameButton className={styles.restartBtn} />
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@ import PlayerToken from "../PlayerToken/PlayerToken";
 import { useSound } from 'react-sounds';
 import customSound from '../../../assets/sounds/166186__drminky__menu-screen-mouse-over.wav';
 
-export const BoardSquare = ({ tile = 0 }) => {
+const BoardSquare = ({ tile = 0 }) => {
     const { play } = useSound(customSound);
 
     return (
@@ -17,3 +17,5 @@ export const BoardSquare = ({ tile = 0 }) => {
         </div>
     )
 }
+
+export default BoardSquare;
