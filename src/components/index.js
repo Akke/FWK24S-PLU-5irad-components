@@ -1,0 +1,11 @@
+export { default as Header } from "./Header";
+export { default as Footer } from "./Footer";
+export { default as PlayerTurn } from "./PlayerTurn";
+export { default as RegisterForm } from "./RegisterForm";
+export { default as RestartGameButton } from "./RestartGameButton";
+export { default as StartNewGame } from "./StartNewGame";
+export { default as WinScreen } from "./WinScreen";
+// export { default as Button } from "./Button";
+// export { default as LoginForm } from "./LoginForm";
+// export { default as Password } from "./Password";
+// export { default as Username } from "./Username";

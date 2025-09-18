@@ -1,7 +1,7 @@
 import styles from './RestartGameButton.module.css';
 import { Icon } from "@iconify/react";
 
-export const RestartGameButton = ({ onClick = () => console.info("Click!")}) => {
+const RestartGameButton = ({ onClick = () => console.info("Click!") }) => {
     return (
         <div className={styles.restartButtonContainer}>
             <button className={styles.restartButton} onClick={onClick} aria-label="Restart game">
@@ -10,3 +10,5 @@ export const RestartGameButton = ({ onClick = () => console.info("Click!")}) => 
         </div>
     )
 };
+
+export default RestartGameButton;

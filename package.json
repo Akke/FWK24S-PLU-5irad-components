@@ -42,6 +42,17 @@
     "vitest": "^3.2.4"
   },
   "description": "Component library for a Gomoku game",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src"
+  ],
+  "sideEffects": false,
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
   "main": "eslint.config.js",
   "keywords": [],
   "author": "",
