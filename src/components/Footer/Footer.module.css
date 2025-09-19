@@ -2,5 +2,15 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    background-color: #41C9E4;
+    color: white;
+    padding: 10px;
+}
+
+.footer p {
+    margin: 2.5px;
+}
+
+.footer :first-child {
+    font-weight: 700;
 }
