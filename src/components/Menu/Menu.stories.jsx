@@ -1,7 +1,7 @@
-import Header from './Header';
+import Menu from './Menu';
 
 const meta = {
-  component: Header,
+  component: Menu,
 };
 
 export default meta;
