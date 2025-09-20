@@ -1,1 +1,1 @@
-export { default } from './EndGameButton';
+export { default as EndGameButton } from './EndGameButton';

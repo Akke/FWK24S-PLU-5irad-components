@@ -1,1 +1,1 @@
-export { default } from './RestartGameButton';
+export { default as RestartGameButton } from './RestartGameButton';

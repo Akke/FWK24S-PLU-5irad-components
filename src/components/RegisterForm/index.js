@@ -1,1 +1,1 @@
-export { default } from './RegisterFrom';
+export { default as RegisterForm } from './RegisterFrom';

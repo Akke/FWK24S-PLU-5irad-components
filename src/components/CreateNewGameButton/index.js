@@ -1,1 +1,1 @@
-export { default } from './CreateNewGameButton';
+export { default as CreateNewGameButton } from './CreateNewGameButton';

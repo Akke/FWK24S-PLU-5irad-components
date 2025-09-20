@@ -1,1 +1,1 @@
-export { default } from './PlayerTurn';
+export { default as PlayerTurn } from './PlayerTurn';

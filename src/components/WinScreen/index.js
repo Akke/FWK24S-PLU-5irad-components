@@ -1,1 +1,1 @@
-export { default } from './WinScreen';
+export { default as WinScreen } from './WinScreen';

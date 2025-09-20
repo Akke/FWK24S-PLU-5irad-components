@@ -1,1 +1,1 @@
-export { default } from './PlayerToken';
+export { default as PlayerToken } from './PlayerToken';
