@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./Menu.module.css";
-import { Icon } from "@iconify/react";
+import HamburgerIcon from "../Icons/HamburgerIcon/HamburgerIcon";
+import CloseIcon from "../Icons/CloseIcon/CloseIcon";
 
 const Menu = () => {
     const [toggled, setToggled] = useState(false);
@@ -8,7 +9,7 @@ const Menu = () => {
     return (
         <div className={styles.menu}>
             <div className={styles.toggle} onClick={() => setToggled(!toggled)}>
-                {toggled ? <Icon icon="material-symbols:close-rounded" width="24" height="24" /> : <Icon icon="material-symbols:menu" width="24" height="24" />}
+                {toggled ? <CloseIcon /> : <HamburgerIcon />}
             </div>
 
             <div className={`${styles.expandedMenu} ${toggled ? styles.visible : ""}`}>
