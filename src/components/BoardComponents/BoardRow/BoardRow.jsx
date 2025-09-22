@@ -1,11 +1,11 @@
 import BoardSquare from "../BoardSquare/BoardSquare";
 import styles from './BoardRow.module.css';
 
-const BoardRow = ({ row, column, useApi }) => {
+const BoardRow = ({ rowData, rowNum }) => {
     return (
         <div className={styles.boardRowContainer}>
-            {row.map((tile, i) => (
-                <BoardSquare key={i} colNum={column} rowNum={i} tile={tile} useApi={useApi} />
+            {rowData.map((tile, colNum) => (
+                <BoardSquare key={colNum} colNum={colNum} rowNum={rowNum} tile={tile} />
             ))}
         </div>
     )

@@ -1,10 +1,12 @@
+import { useContext } from 'react';
 import style from './CreateNewGameButton.module.css'
+import { BoardContext } from '../../../../FWK24S-PLU-fem-i-rad-frontend/src/providers/BoardProvider';
 
 const CreateNewGameButton = ({ useApi }) => {
-    const { createGame } = useApi();
+    const { createBoard } = useContext(BoardContext);
 
     const handleStartGame = () =>{
-        createGame();
+        createBoard();
     }
     
     return (

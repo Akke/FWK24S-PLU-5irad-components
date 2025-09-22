@@ -1,9 +1,20 @@
 .playerTokenContainer {
-    height: 65%;
-    width: 65%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .playerToken {
     height: 100%;
     width: 100%;
+}
+
+.playerOne {
+    color: #41C9E4;
+}
+
+.playerTwo {
+    color: #FF33EE;
 }

@@ -1,7 +1,7 @@
 import style from './StartNewGame.module.css'
 import CreateNewGameButton from '../CreateNewGameButton/CreateNewGameButton'
 
-const StartNewGame = ({ useApi }) => {
+const StartNewGame = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log('Joining new lobby')
@@ -14,7 +14,7 @@ const StartNewGame = ({ useApi }) => {
                 <button className={style.joinGameButton} type='submit'>Join</button>
             </form>
             <hr className={style.divider}/>
-            <CreateNewGameButton useApi={useApi} />
+            <CreateNewGameButton />
         </div>
     )
 }
