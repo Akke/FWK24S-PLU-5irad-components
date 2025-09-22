@@ -1,9 +1,12 @@
 import style from './CreateNewGameButton.module.css'
 
-const CreateNewGameButton = () => {
+const CreateNewGameButton = ({ useApi }) => {
+    const { createGame } = useApi();
+
     const handleStartGame = () =>{
-        console.log('start game')
+        createGame();
     }
+    
     return (
         <>
             <button className={style.createButton} onClick={handleStartGame}>Create New Game</button>
