@@ -2,11 +2,13 @@ import { useContext } from 'react';
 import style from './CreateNewGameButton.module.css'
 import { BoardContext } from '../../../../FWK24S-PLU-fem-i-rad-frontend/src/providers/BoardProvider';
 
-const CreateNewGameButton = ({ useApi }) => {
+const CreateNewGameButton = ({ onRedirect }) => {
     const { createBoard } = useContext(BoardContext);
 
-    const handleStartGame = () =>{
-        createBoard();
+    const handleStartGame = async () =>{
+        const gameId = await createBoard();
+
+        if (onRedirect) onRedirect(`/game/${gameId}`);
     }
     
     return (

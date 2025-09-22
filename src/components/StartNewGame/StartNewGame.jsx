@@ -1,7 +1,7 @@
 import style from './StartNewGame.module.css'
 import CreateNewGameButton from '../CreateNewGameButton/CreateNewGameButton'
 
-const StartNewGame = () => {
+const StartNewGame = ({ onRedirect }) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log('Joining new lobby')
@@ -14,7 +14,7 @@ const StartNewGame = () => {
                 <button className={style.joinGameButton} type='submit'>Join</button>
             </form>
             <hr className={style.divider}/>
-            <CreateNewGameButton />
+            <CreateNewGameButton onRedirect={onRedirect} />
         </div>
     )
 }
