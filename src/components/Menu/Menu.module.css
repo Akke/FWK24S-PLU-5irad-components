@@ -2,6 +2,8 @@
     --base-bg-color: #272727;
     --text-color: #FFF;
     --expanded-bg-color: #FFF;
+    position: relative;
+    z-index: 3;
 }
 
 .menu .toggle {
@@ -19,6 +21,8 @@
     padding: 1em;
     display: none;
     box-shadow: 6px 0 12px -2px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 2;
 }
 
 .menu .expandedMenu ul {
@@ -33,9 +37,6 @@
 .menu .expandedMenu ul li.header {
     font-weight: bold;
     text-transform: uppercase;
-}
-
-.menu .expandedMenu ul li {
 }
 
 .menu .expandedMenu ul li a {

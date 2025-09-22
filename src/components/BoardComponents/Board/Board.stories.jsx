@@ -1,3 +1,4 @@
+import Menu from '../../Menu/Menu';
 import Board from './Board';
 
 const meta = {
@@ -40,3 +41,16 @@ export const Default = {
 export const ActiveGame = {
   args: { tiles: tilesActive }
 };
+
+export const WithMenu = {
+  subcomponents: { Menu },
+  args: { tiles: tilesActive },
+  render: (args) => {
+    return (
+      <>
+        <Menu />
+        <Board {...args} />
+      </>
+    ) 
+  }
+}
