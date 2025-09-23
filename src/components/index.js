@@ -12,6 +12,7 @@ export * from "./RestartGameButton";
 export * from "./StartNewGame";
 export * from "./WinScreen";
 
+export * from "./LoginForm";
 export * from "./LoginForm/Button";
 export * from "./LoginForm/LoginForm";
 export * from "./LoginForm/Password";
