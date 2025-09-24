@@ -56,7 +56,7 @@
     "react-dom": ">=18",
     "react-sounds": "^1.0.25"
   },
-  "main": "eslint.config.js",
+  "main": "./src/components/index.js",
   "keywords": [],
   "author": "",
   "license": "ISC"
