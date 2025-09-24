@@ -6,7 +6,7 @@ import LoginIcon from "../Icons/LoginIcon/LoginIcon";
 import RegisterIcon from "../Icons/RegisterIcon/RegisterIcon";
 import PlusIcon from "../Icons/PlusIcon/PlusIcon";
 
-const Menu = () => {
+const Menu = ({ user }) => {
     const [toggled, setToggled] = useState(false);
 
     return (
@@ -18,9 +18,10 @@ const Menu = () => {
             <div className={`${styles.expandedMenu} ${toggled ? styles.visible : ""}`}>
                 <ul>
                     <li className={styles.header}>Menu</li>
-                    <li><a href="#"><LoginIcon /> Login</a></li>
-                    <li><a href="#"><RegisterIcon /> Register</a></li>
-                    <li><a href="#"><PlusIcon /> Create Game</a></li>
+
+                    {!user ? <li><a href="/login"><LoginIcon /> Login</a></li> : <li><a href="/logout"><LoginIcon /> Logout</a></li>}
+                    {user && <li><a href="/"><PlusIcon /> Create Game</a></li>}
+                    {!user && <li><a href="/register"><RegisterIcon /> Register</a></li>}
                 </ul>
             </div>
         </div>

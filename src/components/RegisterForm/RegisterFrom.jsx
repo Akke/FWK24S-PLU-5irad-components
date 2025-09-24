@@ -4,7 +4,6 @@ const RegisterForm = ({ onSubmit, setUsername, setPassword }) => {
     return (
         <>
             <div className={styles['register-form']}>
-                <h1>Register</h1>
                 <form onSubmit={onSubmit}>
                     <input type='text' name='username' placeholder='Username' onChange={(e) => setUsername(e.target.value)} />
                     <input type='password' name='password' placeholder='Password' onChange={(e) => setPassword(e.target.value)} />
