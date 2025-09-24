@@ -2,6 +2,9 @@ import { useState } from "react";
 import styles from "./Menu.module.css";
 import HamburgerIcon from "../Icons/HamburgerIcon/HamburgerIcon";
 import CloseIcon from "../Icons/CloseIcon/CloseIcon";
+import LoginIcon from "../Icons/LoginIcon/LoginIcon";
+import RegisterIcon from "../Icons/RegisterIcon/RegisterIcon";
+import PlusIcon from "../Icons/PlusIcon/PlusIcon";
 
 const Menu = () => {
     const [toggled, setToggled] = useState(false);
@@ -15,9 +18,9 @@ const Menu = () => {
             <div className={`${styles.expandedMenu} ${toggled ? styles.visible : ""}`}>
                 <ul>
                     <li className={styles.header}>Menu</li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="#">Create Game</a></li>
+                    <li><a href="#"><LoginIcon /> Login</a></li>
+                    <li><a href="#"><RegisterIcon /> Register</a></li>
+                    <li><a href="#"><PlusIcon /> Create Game</a></li>
                 </ul>
             </div>
         </div>

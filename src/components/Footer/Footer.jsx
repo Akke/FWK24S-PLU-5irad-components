@@ -3,8 +3,16 @@ import styles from './Footer.module.css';
 const Footer = () => {
     return (
         <div className={styles.footer}>
-            <p>© 2025 Gomoku</p>
-            <p>Made with 🖤 by Andreas, Angelika, Axel, Gul och Hampus</p>
+            <div className={styles.copyright}>
+                <div className={styles.links}>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">GitHub</a>
+                </div>
+
+                © 2025 Gomoku
+            </div>
+            <div className={styles.createdBy}>Made with 🖤 by Andreas, Angelika, Axel, Gul och Hampus</div>
         </div>
     )
 }

@@ -3,24 +3,28 @@
     --text-color: #FFF;
     --expanded-bg-color: #FFF;
     position: relative;
-    z-index: 3;
+    width: 100%;
 }
 
 .menu .toggle {
     display: flex;
-    padding: 1rem;
+    padding: 20px;
     background-color: var(--base-bg-color);
     width: 100%;
     color: var(--text-color);
 }
 
+.menu .toggle svg {
+    cursor: pointer;
+}
+
 .menu .expandedMenu {
     background-color: var(--expanded-bg-color);
-    width: 25%;
-    height: 100vh;
-    padding: 1em;
+    height: calc(100vh - 66px);
+    padding: 0;
+    width: 20%;
     display: none;
-    box-shadow: 6px 0 12px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     position: absolute;
     z-index: 2;
 }
@@ -31,17 +35,33 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    width: 100%;
 }
 
 .menu .expandedMenu ul li.header {
     font-weight: bold;
     text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+
+.menu .expandedMenu ul li {
+    padding: 10px;
 }
 
 .menu .expandedMenu ul li a {
     color: inherit;
     text-decoration: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    transition: 0.1s color ease-in-out;
+}
+
+.menu .expandedMenu ul li a:hover {
+    color: #000;
 }
 
 .menu .visible {
