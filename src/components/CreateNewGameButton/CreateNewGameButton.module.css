@@ -1,14 +1,18 @@
 .createButton {
-    background-color: #41C9E4;
-    font-family: var(--var-font-family);
-    font-size: inherit;
-    color: white;
-    font-weight: 700;
+    background-color: #272727;
+    outline: none;
     border: none;
-    border-radius: 10px;
-    min-width: 316px;
-    height: 40px;
-}
-.createButton:hover{
+    border-radius: 4px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    color: #FFF;
     cursor: pointer;
+    transition: 0.1s background-color ease-in-out;
+    width: 100%;
+}
+
+.createButton:hover{
+    background-color: #000;
 }
