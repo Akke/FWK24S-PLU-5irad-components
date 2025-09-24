@@ -40,3 +40,13 @@
     color: #FFF;
     text-align: center;
 }
+
+.footer .createdBy a {
+    text-decoration: inherit;
+    color: inherit;
+    transition: 0.1s color ease-in-out;
+}
+
+.footer .createdBy a:hover {
+    color: #E45A92;
+}
