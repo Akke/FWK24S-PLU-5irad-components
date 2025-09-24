@@ -20,6 +20,10 @@
     background-color: #272727;
 }
 
+.login-form form .register:hover {
+    background-color: #000;
+}
+
 .login-form .descr {
     display: flex;
     flex-direction: column;
@@ -59,5 +63,9 @@
     font-weight: bold;
     color: #FFF;
     cursor: pointer;
-    
+    transition: 0.1s background-color ease-in-out;
+}
+
+.login-form form button:hover {
+    background-color: #e979a6;
 }
