@@ -5,13 +5,14 @@
 }
 
 .coinContainer {
-    width: 29px;
-    height: 29px;
-    background-color: var(--color-pink);
+    width: 30px;
+    height: 30px;
     border-radius: 4px;
     cursor: pointer;
+    border: 2px solid hsl(336, 72%, 95%);
+    background: linear-gradient(to bottom, #fff, hsl(336, 72%, 95%));
 }
 
 .coinContainer:hover {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.153) inset;
+    box-shadow: 0 0 8px rgba(233, 121, 166, 0.2) inset;
 }
