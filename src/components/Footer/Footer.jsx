@@ -1,3 +1,6 @@
+import { AboutIcon } from '../Icons/AboutIcon/AboutIcon';
+import { ContactIcon } from '../Icons/ContactIcon/ContactIcon';
+import { GithubIcon } from '../Icons/GithubIcon/GithubIcon';
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -5,9 +8,9 @@ const Footer = () => {
         <div className={styles.footer}>
             <div className={styles.copyright}>
                 <div className={styles.links}>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                    <a href="#">GitHub</a>
+                    <a href="#"><AboutIcon /> About</a>
+                    <a href="#"><ContactIcon /> Contact</a>
+                    <a href="#"><GithubIcon /> GitHub</a>
                 </div>
 
                 © 2025 Gomoku

@@ -25,6 +25,9 @@
     text-transform: uppercase;
     font-weight: bold;
     transition: 0.1s color ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .footer .copyright .links a:hover {
