@@ -12,7 +12,7 @@
     background-color: var(--base-bg-color);
     width: 100%;
     color: var(--text-color);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
 }
 
@@ -28,6 +28,22 @@
 .menu .toggle .icon {}
 
 .menu .toggle .logo {
+    margin: 0 auto;
+}
+
+.menu .toggle .switch {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu .toggle .switch > svg {
+    cursor: default;
+}
+
+.menu .toggle .switch:hover > svg {
+    color:currentColor;
 }
 
 .menu .expandedMenu {

@@ -18,3 +18,4 @@ export * from "./LoginForm/LoginForm";
 export * from "./LoginForm/Password";
 export * from "./LoginForm/Username";
 export * from "./Logo";
+export * from "./Switch";

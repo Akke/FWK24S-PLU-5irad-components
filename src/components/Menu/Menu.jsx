@@ -5,9 +5,11 @@ import CloseIcon from "../Icons/CloseIcon/CloseIcon";
 import LoginIcon from "../Icons/LoginIcon/LoginIcon";
 import RegisterIcon from "../Icons/RegisterIcon/RegisterIcon";
 import PlusIcon from "../Icons/PlusIcon/PlusIcon";
+import WaxingCrescentIcon from "../Icons/WaxingCrescentIcon/WaxingCrescentIcon";
 import Logo from "../Logo/Logo";
+import { Switch } from "../Switch";
 
-const Menu = ({ user }) => {
+const Menu = ({ user, toggleTheme }) => {
     const [toggled, setToggled] = useState(false);
 
     return (
@@ -19,6 +21,11 @@ const Menu = ({ user }) => {
 
                 <div className={styles.logo}>
                     <Logo />
+                </div>
+
+                <div className={styles.switch}>
+                    <WaxingCrescentIcon height="20px" />
+                    <Switch toggleTheme={toggleTheme} />
                 </div>
             </div>
 
