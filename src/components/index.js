@@ -10,6 +10,7 @@ export * from "./PlayerTurn";
 export * from "./RegisterForm";
 export * from "./RestartGameButton";
 export * from "./StartNewGame";
+export * from "./Toaster";
 export * from "./WinScreen";
 
 export * from "./LoginForm";
