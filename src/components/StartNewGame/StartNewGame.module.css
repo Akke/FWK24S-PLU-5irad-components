@@ -30,7 +30,7 @@
     padding: 15px;
 }
 .joinGameButton{
-    background-color: #E45A92;
+    background-color: var(--accent);
     outline: none;
     border: none;
     border-radius: 4px;

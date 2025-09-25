@@ -6,8 +6,8 @@
 .footer .copyright {
     padding: 40px;
     gap: 20px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    border-top: 1px solid var(--divider-border-color);
+    background: var(--footer-top-bg-color);
     text-align: center;
 }
 
@@ -31,13 +31,13 @@
 }
 
 .footer .copyright .links a:hover {
-    color: #000;
+    color: var(--text-link-hover);
 }
 
 .footer .createdBy {
     padding: 20px;
-    background-color: #272727;
-    color: #FFF;
+    background: var(--footer-bottom-bg-color);
+    color: var(--footer-bottom-text-color);
     text-align: center;
 }
 
@@ -48,5 +48,5 @@
 }
 
 .footer .createdBy a:hover {
-    color: #E45A92;
+    color: var(--accent);
 }

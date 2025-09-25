@@ -4,16 +4,19 @@
     --expanded-bg-color: #FFF;
     position: relative;
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .menu .toggle {
     display: grid;
     padding: 20px;
-    background-color: var(--base-bg-color);
+    background-color: var(--menu-bg-color);
     width: 100%;
     color: var(--text-color);
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .menu .toggle svg {
@@ -22,13 +25,20 @@
 }
 
 .menu .toggle svg:hover {
-    color: #e45a92;
+    color: var(--accent);
 }
 
 .menu .toggle .icon {}
 
 .menu .toggle .logo {
     margin: 0 auto;
+}
+
+.menu .toggle .glow {
+    position: absolute;
+    box-shadow: 0 -100px 140px 90px var(--accent);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .menu .toggle .switch {
@@ -43,11 +53,11 @@
 }
 
 .menu .toggle .switch:hover > svg {
-    color:currentColor;
+    color: currentColor;
 }
 
 .menu .expandedMenu {
-    background-color: var(--expanded-bg-color);
+    background: var(--menu-expanded-bg-color);
     height: calc(100vh - 66px);
     padding: 0;
     width: 20%;
@@ -70,7 +80,7 @@
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--divider-border-color);
     padding: 20px;
 }
 
@@ -89,7 +99,7 @@
 }
 
 .menu .expandedMenu ul li a:hover {
-    color: #000;
+    color: var(--text-link-hover);
 }
 
 .menu .visible {

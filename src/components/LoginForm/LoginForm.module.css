@@ -4,7 +4,7 @@
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
-    background-color: #FFF;
+    background: var(--main-content-container-bg-color);
 }
 
 .login-form form {
@@ -16,18 +16,18 @@
 }
 
 .login-form form .register {
-    background-color: #272727;
+    background-color: var(--secondary-accent);
 }
 
 .login-form form .register:hover {
-    background-color: #000;
+    background-color: var(--secondary-accent-hover);
 }
 
 .login-form .descr {
     display: flex;
     flex-direction: column;
     padding: 40px;
-    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    border-right: 1px solid var(--divider-border-color);
 }
 
 .login-form .descr p {
@@ -45,14 +45,14 @@
 
 .login-form form input {
     outline: none;
-    border: 2px solid hsl(336, 72%, 95%);
+    border: 2px solid var(--input-border-color);
     border-radius: 4px;
-    background: linear-gradient(to bottom, #fff, hsl(336, 72%, 95%));
+    background: var(--input-bg-color);
     padding: 15px;
 }
 
 .login-form form button {
-    background-color: #E45A92;
+    background-color: var(--accent);
     outline: none;
     border: none;
     border-radius: 4px;
@@ -60,11 +60,11 @@
     font-family: inherit;
     font-size: inherit;
     font-weight: bold;
-    color: #FFF;
+    color: var(--secondary-button-text-color);
     cursor: pointer;
     transition: 0.1s background-color ease-in-out;
 }
 
 .login-form form button:hover {
-    background-color: #e979a6;
+    background-color: var(--accent-hover);
 }

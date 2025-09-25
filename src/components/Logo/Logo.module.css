@@ -7,5 +7,5 @@
 }
 
 .logo .color {
-    color: #e45a92;
+    color: var(--accent);
 }
