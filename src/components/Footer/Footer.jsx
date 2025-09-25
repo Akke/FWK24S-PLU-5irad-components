@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className={styles.links}>
                     <a href="#"><AboutIcon /> About</a>
                     <a href="#"><ContactIcon /> Contact</a>
-                    <a href="#"><GithubIcon /> GitHub</a>
+                    <a href="https://github.com/angelika-friis/FWK24S-PLU-fem-i-rad-frontend" target="_blank"><GithubIcon /> GitHub</a>
                 </div>
 
                 © 2025 Gomoku
