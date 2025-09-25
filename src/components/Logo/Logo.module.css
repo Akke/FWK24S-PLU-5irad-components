@@ -1,0 +1,11 @@
+.logo {
+    font-weight: bold;
+    font-size: 1.4em;
+    font-family: "Unbounded";
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.logo .color {
+    color: #e45a92;
+}

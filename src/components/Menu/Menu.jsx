@@ -5,14 +5,21 @@ import CloseIcon from "../Icons/CloseIcon/CloseIcon";
 import LoginIcon from "../Icons/LoginIcon/LoginIcon";
 import RegisterIcon from "../Icons/RegisterIcon/RegisterIcon";
 import PlusIcon from "../Icons/PlusIcon/PlusIcon";
+import Logo from "../Logo/Logo";
 
 const Menu = ({ user }) => {
     const [toggled, setToggled] = useState(false);
 
     return (
         <div className={styles.menu}>
-            <div className={styles.toggle} onClick={() => setToggled(!toggled)}>
-                {toggled ? <CloseIcon /> : <HamburgerIcon />}
+            <div className={styles.toggle}>
+                <div className={styles.icon} onClick={() => setToggled(!toggled)}>
+                    {toggled ? <CloseIcon /> : <HamburgerIcon />}
+                </div>
+
+                <div className={styles.logo}>
+                    <Logo />
+                </div>
             </div>
 
             <div className={`${styles.expandedMenu} ${toggled ? styles.visible : ""}`}>

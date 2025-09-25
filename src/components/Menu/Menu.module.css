@@ -7,15 +7,27 @@
 }
 
 .menu .toggle {
-    display: flex;
+    display: grid;
     padding: 20px;
     background-color: var(--base-bg-color);
     width: 100%;
     color: var(--text-color);
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 }
 
 .menu .toggle svg {
     cursor: pointer;
+    transition: color 0.1s ease-in-out;
+}
+
+.menu .toggle svg:hover {
+    color: #e45a92;
+}
+
+.menu .toggle .icon {}
+
+.menu .toggle .logo {
 }
 
 .menu .expandedMenu {
