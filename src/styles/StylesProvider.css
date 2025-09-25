@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter_18pt-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter_18pt-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter_18pt-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url("/fonts/Unbounded-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* no colors or theme specific rules here */
+:root {
+    --font-family: "Inter", Tahoma;
+    --font-size: 15px;
+}
+
+:root[data-theme="light"] {
+    --bg-color: #f0f2f5;
+    --card-bg-color: #b1b6ba;
+    --text-color: #212121;
+    --text-link-hover: #000;
+    --accent: #E45A92;
+    --accent-hover: #e979a6;
+    --secondary-accent: #272727;
+    --secondary-accent-hover: #000;
+    --secondary-button-text-color: #FFF;
+    --input-bg-color: linear-gradient(to bottom, #fff, hsl(336, 72%, 95%));
+    --input-border-color: hsl(336, 72%, 95%);
+    --menu-bg-color: #272727;
+    --menu-expanded-bg-color: #FFF;
+    --switch-bg-color: #FFF;
+    --switch-marker-bg-color: #272727;
+    --divider-border-color: rgba(0, 0, 0, 0.05);
+    --footer-top-bg-color: #FFF;
+    --footer-bottom-bg-color: #272727;
+    --footer-bottom-text-color: #FFF;
+    --main-content-container-bg-color: #FFF;
+}
+
+:root[data-theme="dark"] {
+    --bg-color: #000017;
+    --card-bg-color: #000050;
+    --text-color: hsl(240, 92%, 97%);
+    --text-link-hover: #FFF;
+    --accent: #6037ff;
+    --accent-hover: rgb(109, 53, 193);
+    --secondary-accent: #E45A92;
+    --secondary-accent-hover: #e979a6;
+    --secondary-button-text-color: #FFF;
+    --input-bg-color: #1c183d;
+    --input-border-color: #333065;
+    --menu-bg-color: #000017;
+    --menu-expanded-bg-color: linear-gradient(135deg, #1c183d, #0a0927);
+    --switch-bg-color: #FFF;
+    --switch-marker-bg-color: #272727;
+    --divider-border-color: rgba(255, 255, 255, 0.05);
+    --footer-top-bg-color: linear-gradient(135deg, #1c183d, #0a0927);
+    --footer-bottom-bg-color: #000017;
+    --footer-bottom-text-color: #FFF;
+    --main-content-container-bg-color: linear-gradient(135deg, #1c183d, #0a0927);
+}
+
+/* opt-in transition only while toggling to avoid animating on page load */
+:root.theme-animating,
+:root.theme-animating * {
+    transition:
+        background-color 250ms ease,
+        color 250ms ease,
+        border-color 250ms ease,
+        fill 250ms ease,
+        stroke 250ms ease;
+}
+
+/* accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    :root.theme-animating,
+    :root.theme-animating * {
+        transition: none !important;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input,
+button {
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.errorBox {
+    background-color: #E43636;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 50%;
+    color: #FFF;
+    text-align: center;
+}
