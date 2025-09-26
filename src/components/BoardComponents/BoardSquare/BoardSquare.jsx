@@ -3,15 +3,15 @@ import PlayerToken from "../PlayerToken/PlayerToken";
 import { useSound } from 'react-sounds';
 import customSound from '../../../assets/sounds/166186__drminky__menu-screen-mouse-over.wav';
 import { useParams } from "react-router-dom";
-import { useContext } from "react";
-import { BoardContext } from "../../../../../FWK24S-PLU-fem-i-rad-frontend/src/providers/BoardProvider";
+import { useBoard } from "../../../providers/BoardProvider.jsx/BoardCtx";
 
-const BoardSquare = ({ colNum, rowNum, tile = 0 }) => {
+const BoardSquare = ({ colNum = 0, rowNum = 0, tile = 0 }) => {
     const { play } = useSound(customSound);
-    const { setTile } = useContext(BoardContext);
+    const { setTile } = useBoard();
     const { gameId } = useParams();
 
     const handleClick = () => {
+        console.log(gameId)
         setTile(gameId, rowNum, colNum, 1);
     }
 
