@@ -2,14 +2,16 @@ import { AboutIcon } from '../Icons/AboutIcon/AboutIcon';
 import { ContactIcon } from '../Icons/ContactIcon/ContactIcon';
 import { GithubIcon } from '../Icons/GithubIcon/GithubIcon';
 import styles from './Footer.module.css';
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
     return (
         <div className={styles.footer}>
             <div className={styles.copyright}>
                 <div className={styles.links}>
-                    <a href="#"><AboutIcon /> About</a>
-                    <a href="#"><ContactIcon /> Contact</a>
+                    <Link to="/about"><AboutIcon /> About</Link>
+                    <Link to="/contact"><ContactIcon /> Contact</Link>
                     <a href="https://github.com/angelika-friis/FWK24S-PLU-fem-i-rad-frontend" target="_blank"><GithubIcon /> GitHub</a>
                 </div>
 
