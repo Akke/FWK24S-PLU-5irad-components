@@ -1,13 +1,14 @@
 /** @type { import('@storybook/react-vite').Preview } */
 import BoardProvider from '../src/contexts/BoardProvider';
-import '../src/global.css';
+import '../src/styles/StylesProvider.css';
+import { withThemeByDataAttribute } from '@storybook/addon-themes';
 
 const preview = {
   parameters: {
     controls: {
       matchers: {
-       color: /(background|color)$/i,
-       date: /Date$/i,
+        color: /(background|color)$/i,
+        date: /Date$/i,
       },
     },
 
@@ -19,12 +20,21 @@ const preview = {
     }
   },
   decorators: [
+    // 1. Themes-addon
+    withThemeByDataAttribute({
+      themes: {
+        light: 'light',
+        dark: 'dark',
+      },
+      defaultTheme: 'light',
+      attributeName: 'data-theme',
+    }),
+    // 2. Din BoardProvider
     (Story) => (
       <BoardProvider>
-        {/* 👇 Decorators in Storybook also accept a function. Replace <Story/> with Story() to enable it  */}
         <Story />
       </BoardProvider>
-    )
+    ),
   ]
 }
 

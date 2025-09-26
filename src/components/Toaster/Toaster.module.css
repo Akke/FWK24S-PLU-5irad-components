@@ -1,0 +1,68 @@
+@keyframes width-animation {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
+
+.toaster {
+    background-color: var(--input-bg-color);
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
+    min-width: 25%;
+    z-index: 4;
+}
+
+/* Modifier-klasser */
+.error .progressBar {
+    background-color: #b12b2b;
+}
+
+.error .title {
+    color: #b12b2b;
+}
+
+.success .progressBar {
+    background-color: #51ad5c;
+}
+
+.success .title {
+    color: #51ad5c;
+}
+
+.info .progressBar {
+    background-color: var(--accent);
+}
+
+.info .title {
+    color: var(--accent);
+}
+
+.progressBar {
+    background-color: var(--accent);
+    border-radius: 6px 6px 0 0;
+    width: 100%;
+    height: 4px;
+    animation: width-animation linear forwards;
+}
+
+.message {
+    padding: 10px 20px;
+}
+
+.title {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.body {
+    margin-top: 4px;
+}
