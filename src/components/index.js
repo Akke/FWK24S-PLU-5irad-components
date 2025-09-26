@@ -2,6 +2,7 @@ export * from "./BoardComponents/Board";
 export * from "./BoardComponents/BoardRow";
 export * from "./BoardComponents/BoardSquare";
 export * from "./BoardComponents/PlayerToken";
+export * from './ContactForm';
 export * from "./CreateNewGameButton";
 export * from "./EndGameButton";
 export * from "./Footer";
