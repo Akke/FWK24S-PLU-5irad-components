@@ -1,5 +1,4 @@
 /** @type { import('@storybook/react-vite').Preview } */
-import BoardProvider from '../src/contexts/BoardProvider';
 import '../src/styles/StylesProvider.css';
 import { withThemeByDataAttribute } from '@storybook/addon-themes';
 
@@ -20,7 +19,6 @@ const preview = {
     }
   },
   decorators: [
-    // 1. Themes-addon
     withThemeByDataAttribute({
       themes: {
         light: 'light',
@@ -29,11 +27,8 @@ const preview = {
       defaultTheme: 'light',
       attributeName: 'data-theme',
     }),
-    // 2. Din BoardProvider
     (Story) => (
-      <BoardProvider>
-        <Story />
-      </BoardProvider>
+      <Story />
     ),
   ]
 }

@@ -1,17 +1,12 @@
-import { createContext } from "react";
-import { BoardContext } from "../mock/BoardProvider";
-
-const ContextProvider = createContext({});
+import { BoardCtx } from "../providers/BoardProvider/BoardCtx";
 
 const withBoard = (Story, context) => {
-    const fakeBoard = {
-        test: {}
-    }
+    const fakeBoard = {};
 
     return (
-        <BoardContext value={fakeBoard}>
+        <BoardCtx.Provider value={fakeBoard}>
             <Story {...context} />
-        </BoardContext>
+        </BoardCtx.Provider>
     );
 }
 

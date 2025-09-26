@@ -1,7 +1,5 @@
-import { createContext, useContext, useState } from "react";
-import { useBoard } from "../providers/BoardProvider.jsx/BoardCtx";
-
-const BoardCtx = useBoard();
+import { useState } from "react";
+import { BoardCtx } from "../providers/BoardProvider/BoardCtx";
 
 const BoardProvider = ({ children }) => {
     const [tiles, setTiles] = useState([
@@ -20,7 +18,6 @@ const BoardProvider = ({ children }) => {
     const [gameover, setGameover] = useState(false);
 
     const setTile = async (gameId, row, column, token) => {
-        console.log("call!")
         if(getTile(row, column) != null || gameover) return;
 
         setTiles(prev => {
@@ -65,9 +62,9 @@ const BoardProvider = ({ children }) => {
     }
 
     return (
-        <BoardContext.Provider value={{ setTile, getTile, tiles, createBoard, validateBoard, setTiles }}>
+        <BoardCtx.Provider value={{ setTile, getTile, tiles, createBoard, validateBoard, setTiles }}>
             {children}
-        </BoardContext.Provider>
+        </BoardCtx.Provider>
     );
 }
 

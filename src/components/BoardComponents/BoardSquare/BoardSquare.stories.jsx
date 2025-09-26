@@ -2,6 +2,7 @@ import { Outlet, Route, Routes } from "react-router-dom";
 import withRouter from "../../../decorators/withRouter";
 import BoardSquare from "./BoardSquare";
 import withBoard from "../../../decorators/withBoard";
+import BoardProvider from "../../../mock/BoardProvider";
 
 const meta = {
   title: "Board/BoardSquare",
@@ -29,13 +30,15 @@ const AppTemplate = () => {
 export const Default = {
   parameters: { router: { initialEntries: ["/game/1234"] } },
   render: () => (
-    <Routes>
+    <BoardProvider>
+      <Routes>
         <Route exact path="/game/:gameId" element={<ProtectedRoute isAuthenticated={mockUser} />}>
             <Route element={<AppTemplate />}>
                 <Route index element={<BoardSquare />} />
             </Route>
         </Route>
-    </Routes>
+      </Routes>
+    </BoardProvider>
   )
 };
 
