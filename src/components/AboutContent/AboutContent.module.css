@@ -1,0 +1,36 @@
+.aboutContent {
+    max-width: 900px;
+    margin: 3rem auto 5rem;
+    padding: 0 1rem;
+}
+
+.aboutContent h1 {
+    font-family: "Unbounded", var(--font-family);
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 1.25;
+    margin: 0 0 0.75rem;
+}
+
+.aboutContent p,
+.aboutContent blockquote {
+    max-width: 45rem;
+    line-height: 1.6;
+}
+
+.aboutContent blockquote {
+    margin: 0.6rem 0 0.8rem;
+    padding-left: 0.75rem;
+    border-left: 3px solid var(--accent);
+    font-style: italic;
+    opacity: 0.9;
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.hr {
+    height: 1px;
+    border: 0;
+    background: var(--divider-border-color);
+    max-width: 45rem;
+    margin: 1.2rem 0 0.8rem;
+}
