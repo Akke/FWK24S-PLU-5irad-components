@@ -1,3 +1,4 @@
+export * from "./AboutContent";
 export * from "./BoardComponents/Board";
 export * from "./BoardComponents/BoardRow";
 export * from "./BoardComponents/BoardSquare";
