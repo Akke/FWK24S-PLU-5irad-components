@@ -1,6 +1,6 @@
-import RegisterForm from "./RegisterFrom";
+import RegisterForm from "./RegisterForm";
 
-const meta =  {
+const meta = {
     component: RegisterForm,
 }
 
