@@ -1,45 +1,45 @@
 import styles from "./ContactForm.module.css";
 
-const ContactForm = ({ onSubmit, setName, setEmail, setMessage }) => {
-
+export default function ContactForm() {
     return (
-
-        <form onSubmit={onSubmit} className={styles.contactForm}>
-            <div className={styles.field}>
-                <label htmlFor="name">Name</label>
-                <input
-                    id="name"
-                    type="text"
-                    onChange={(e) => setName?.(e.target.value)}
-                    required
-                />
+        <section className={styles.card}>
+            <div className={styles.meta}>
+                <h2 className={styles.title}>Get in touch</h2>
+                <p className={styles.lede}>
+                    Questions about Gomoku? We would love to hear from you.
+                </p>
             </div>
 
-            <div className={styles.field}>
-                <label htmlFor="email">Email</label>
-                <input
-                    id="email"
-                    type="email"
-                    onChange={(e) => setEmail?.(e.target.value)}
-                    required
-                />
-            </div>
+            <form className={styles.form}>
+                <div className={styles.field}>
+                    <input
+                        name="name"
+                        type="text"
+                        placeholder="Name"
+                        aria-label="Name"
+                    />
+                </div>
 
-            <div className={styles.field}>
-                <label htmlFor="message">Message</label>
-                <textarea
-                    id="message"
-                    rows="4"
-                    onChange={(e) => setMessage?.(e.target.value)}
-                    required
-                />
-            </div>
+                <div className={styles.field}>
+                    <input
+                        name="email"
+                        type="email"
+                        placeholder="Email"
+                        aria-label="Email"
+                    />
+                </div>
 
-            <button type="submit" className={styles.button}>Send</button>
+                <div className={styles.field}>
+                    <textarea
+                        name="message"
+                        rows={6}
+                        placeholder="Message"
+                        aria-label="Message"
+                    />
+                </div>
 
-        </form>
-
+                <button type="submit" className={styles.button}>Send message</button>
+            </form>
+        </section>
     );
-};
-
-export default ContactForm;
+}
