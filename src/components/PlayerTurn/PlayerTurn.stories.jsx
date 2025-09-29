@@ -7,10 +7,14 @@ const meta = {
 
 export default meta;
 
-export const Default = {
-  args: {}
+export const PlayerX = {
+  args: { player: 1 }
 };
 
-export const Opponent = {
-  args: { username: 'Player O', isOpponent: true }
+export const PlayerO = {
+  args: { player: 2 }
+};
+
+export const InvalidPlayer = {
+  args: { }
 };

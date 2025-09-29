@@ -13,6 +13,6 @@
     font-size: 24px;
 }
 
-.opponent {
+.playerCircle {
     color: var(--accent);
 }
