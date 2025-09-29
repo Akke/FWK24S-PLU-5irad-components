@@ -21,7 +21,7 @@ const StartNewGame = ({ onRedirect }) => {
     return(
         <div className={style.createNewGameContainer}>
             <form onSubmit={(e)=>handleSubmit(e)} className={style.createNewGameForm}>
-                <input className={style.createNewGameInput} onChange={setGameId} type='text' placeholder='Game Lobby ID'/>
+                <input className={style.createNewGameInput} onChange={(e) => setGameId(e.target.value)} type='text' placeholder='Game Lobby ID'/>
                 <button className={style.joinGameButton} type='submit'>Join</button>
             </form>
             <div className={style.newGameButton}>
