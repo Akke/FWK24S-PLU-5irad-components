@@ -29,3 +29,11 @@ export const Success = {
         id: 3
     }
 };
+
+export const Multiline = {
+    args: {
+        type: "info",
+        msg: "This is a longer message. Therefore it must be more informative. Do you not also find this message very informative?",
+        id: 3
+    }
+};

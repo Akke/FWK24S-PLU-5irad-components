@@ -9,7 +9,7 @@
 }
 
 .toaster {
-    background: var(--main-content-container-bg-color);
+    background: var(--toaster-bg-color);
     position: fixed;
     top: 85px;
     left: 20px;
