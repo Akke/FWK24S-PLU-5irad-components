@@ -1,0 +1,23 @@
+.gameInfoContainer {
+    background: var(--input-bg-color);
+    border-radius: 6px;
+    border: 1px solid var(--input-border-color);
+    padding: 10px 0;
+    width: 175px;
+    color: var(--text-color);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.turnInfo {
+    font-weight: 600;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.roundInfo {
+    color: var(--accent);
+    font-weight: 300;
+    font-size: 0.65rem;
+}

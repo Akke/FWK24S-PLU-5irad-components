@@ -7,6 +7,7 @@ export * from './ContactForm';
 export * from "./CreateNewGameButton";
 export * from "./EndGameButton";
 export * from "./Footer";
+export * from "./GameInfoBox";
 export * from "./Menu";
 export * from "./PlayerTurn";
 export * from "./RegisterForm";
