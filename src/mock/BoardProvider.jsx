@@ -17,8 +17,10 @@ const BoardProvider = ({ children }) => {
     
     const [gameover, setGameover] = useState(false);
 
-    const setTile = async (gameId, row, column, token) => {
+    const setTile = async (gameId, row, column) => {
         if(getTile(row, column) != null || gameover) return;
+
+        const token = 1;
 
         setTiles(prev => {
             const next = prev.map(r => r);     // shallow copy outer array

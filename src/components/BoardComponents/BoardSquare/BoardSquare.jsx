@@ -11,8 +11,7 @@ const BoardSquare = ({ colNum = 0, rowNum = 0, tile = 0 }) => {
     const { gameId } = useParams();
 
     const handleClick = () => {
-        console.log(gameId, setTile)
-        setTile(gameId, rowNum, colNum, 1);
+        setTile(gameId, rowNum, colNum);
     }
 
     return (
