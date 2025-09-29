@@ -61,8 +61,12 @@ const BoardProvider = ({ children }) => {
         return gameId != null;
     }
 
+    const joinBoard = async (gameId) => {
+        return true;
+    }
+
     return (
-        <BoardCtx.Provider value={{ setTile, getTile, tiles, createBoard, validateBoard, setTiles }}>
+        <BoardCtx.Provider value={{ setTile, getTile, tiles, createBoard, validateBoard, setTiles, joinBoard }}>
             {children}
         </BoardCtx.Provider>
     );

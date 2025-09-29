@@ -1,4 +1,3 @@
-import { useContext } from 'react';
 import style from './CreateNewGameButton.module.css'
 import { useBoard } from "@akkelw/5irad-board-ctx";
 
