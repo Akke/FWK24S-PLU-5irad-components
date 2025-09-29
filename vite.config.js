@@ -27,7 +27,13 @@ export default defineConfig({
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ['react','react-dom','@akkelw/5irad-board-ctx']
+      external: [
+        "react",
+        "react-dom",
+        "react-router",
+        "react-router-dom",
+        "@akkelw/5irad-board-ctx",
+      ],
     }
   },
   test: {
