@@ -19,6 +19,17 @@ export default defineConfig({
   ssr: {
     noExternal: ["5irad-components", "@akkelw/5irad-board-ctx"]
   },
+  build: {
+    lib: {
+      entry: "src/index.jsx",
+      name: "FiveIradComponents",
+      formats: ["es", "cjs"],
+      fileName: (format) => `index.${format}.js`,
+    },
+    rollupOptions: {
+      external: ['react','react-dom','@akkelw/5irad-board-ctx']
+    }
+  },
   test: {
     projects: [{
       extends: true,
