@@ -1,4 +1,4 @@
-import { BoardCtx } from "../providers/BoardProvider/BoardCtx";
+import { BoardCtx } from "@akkelw/5irad-board-ctx";
 
 const withBoard = (Story, context) => {
     const fakeBoard = {};

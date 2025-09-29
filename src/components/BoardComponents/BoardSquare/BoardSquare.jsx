@@ -3,7 +3,7 @@ import PlayerToken from "../PlayerToken/PlayerToken";
 import { useSound } from 'react-sounds';
 import customSound from '../../../assets/sounds/166186__drminky__menu-screen-mouse-over.wav';
 import { useParams } from "react-router-dom";
-import { useBoard } from "../../../providers/BoardProvider/BoardCtx";
+import { useBoard } from "@akkelw/5irad-board-ctx";
 
 const BoardSquare = ({ colNum = 0, rowNum = 0, tile = 0 }) => {
     const { play } = useSound(customSound);

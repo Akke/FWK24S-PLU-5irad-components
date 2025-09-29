@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BoardCtx } from "../providers/BoardProvider/BoardCtx";
+import { BoardCtx } from "@akkelw/5irad-board-ctx";
 
 const BoardProvider = ({ children }) => {
     const [tiles, setTiles] = useState([
