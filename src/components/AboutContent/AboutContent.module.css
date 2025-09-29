@@ -10,7 +10,8 @@
     letter-spacing: 0.2px;
     line-height: 1.25;
     margin: 0 0 1.2rem;
-    font-size: clamp(1.8rem, 1.1rem + 1.6vw, 2.4rem);
+    font-size: clamp(1.6rem, 1rem + 1.3vw, 2.1rem);
+    text-wrap: balance;
 }
 
 .aboutContent p,
