@@ -1,8 +1,57 @@
-.contactForm {
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 900px;
+    margin: 3rem auto 5rem;
+    background: var(--main-content-container-bg-color);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .08),
+        0 2px 12px rgba(0, 0, 0, .06);
+}
+
+@media (min-width: 768px) {
+    .card {
+        grid-template-columns: minmax(320px, 42%) 1fr;
+    }
+}
+
+.meta {
+    padding: 24px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    max-width: 520px;
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .meta {
+        border-right: 1px solid color-mix(in srgb, var(--divider-border-color) 50%, transparent);
+    }
+}
+
+.title {
+    font-family: "Unbounded", var(--font-family);
+    font-weight: 700;
+    font-size: clamp(1.35rem, 1rem + 1.05vw, 1.75rem);
+    line-height: 1.2;
+    margin: 0;
+    margin-top: 1rem;
+    text-wrap: balance;
+}
+
+.lede {
+    margin: 4px 0 0;
+    line-height: 1.6;
+    opacity: 0.9;
+    max-width: 38ch;
+}
+
+.form {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 
 .field {
@@ -10,32 +59,61 @@
     flex-direction: column;
 }
 
-label {
-    margin-bottom: 0.25rem;
-    font-weight: 500;
+.form input,
+.form textarea {
+    width: 100%;
+    min-height: 46px;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    background: color-mix(in srgb, var(--bg-color) 85%, #fff 15%);
+    color: inherit;
+    font: inherit;
+    line-height: 1.35;
 }
 
-input,
-textarea {
-    width: 100%;
-    padding: 0.6rem 0.7rem;
-    border: 1px solid var(--divider-border-color);
-    border-radius: 6px;
-    font: inherit;
-    background: var(--main-content-container-bg-color);
-    color: inherit;
+.form textarea {
+    resize: none;
+    min-height: 150px;
+}
+
+.form input:focus-visible,
+.form textarea:focus-visible {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    opacity: 0.8;
 }
 
 .button {
-    align-self: flex-start;
-    padding: 0.55rem 1rem;
-    border: none;
-    border-radius: 6px;
+    margin-top: 14px;
+    width: 100%;
+    min-height: 46px;
     background: var(--accent);
-    color: #fff;
+    color: var(--secondary-button-text-color);
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 120ms ease-in-out, transform 80ms ease;
 }
 
 .button:hover {
     background: var(--accent-hover);
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+@media (max-width: 480px) {
+
+    .meta,
+    .form {
+        padding: 22px;
+    }
 }
