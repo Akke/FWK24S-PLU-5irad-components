@@ -1,7 +1,7 @@
 import styles from './GameInfoBox.module.css';
 
 const GameInfoBox = ({ isYourTurn, round }) => {
-    if (typeof isYourTurn !== "boolean" || !round) {
+    if (typeof isYourTurn !== "boolean" || typeof round !== "number") {
         return <p>Invalid props!</p>
     }
     
