@@ -2,8 +2,10 @@ import styles from "./LoginForm.module.css";
 import Username from "./Username";
 import Password from "./Password";
 import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 
 const LoginForm = ({ onSubmit, setUsername, setPassword }) => {
+    const navigate = useNavigate();
     return (
         <div className={styles["login-form"]}>
             <div className={styles.descr}>
