@@ -2,10 +2,8 @@ import styles from "./LoginForm.module.css";
 import Username from "./Username";
 import Password from "./Password";
 import Button from "./Button";
-import { useNavigate } from "react-router-dom";
 
-const LoginForm = ({ onSubmit, setUsername, setPassword }) => {
-    const navigate = useNavigate();
+const LoginForm = ({ onSubmit, setUsername, setPassword, onRegister }) => {
     return (
         <div className={styles["login-form"]}>
             <div className={styles.descr}>
@@ -20,7 +18,7 @@ const LoginForm = ({ onSubmit, setUsername, setPassword }) => {
                 <button
                     className={styles.register}
                     type="button"
-                    onClick={() => navigate("/register")}
+                    onClick={onRegister}
                 >
                     Register an account
                 </button>
