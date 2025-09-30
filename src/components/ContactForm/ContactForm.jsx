@@ -6,7 +6,8 @@ export default function ContactForm() {
             <div className={styles.meta}>
                 <h2 className={styles.title}>Get in touch</h2>
                 <p className={styles.lede}>
-                    Questions about Gomoku? We would love to hear from you.
+                    Questions about Gomoku? <br />
+                    We would love to hear from you.
                 </p>
             </div>
 
