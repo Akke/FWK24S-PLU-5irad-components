@@ -9,14 +9,14 @@ export default meta;
 
 export const Default = {
     args: {
-        playersTurn: true,
+        isYourTurn: true,
         round: 1
     }
 }
 
 export const OtherPlayersTurn = {
     args: {
-        playersTurn: false,
+        isYourTurn: false,
         round: 2
     }
 }
