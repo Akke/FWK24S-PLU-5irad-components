@@ -15,7 +15,13 @@ const LoginForm = ({ onSubmit, setUsername, setPassword }) => {
                 <Username onBlur={setUsername} />
                 <Password onChange={setPassword} />
                 <Button value="Sign in" />
-                <button className={styles.register} type="button">Register an account</button>
+                <button
+                    className={styles.register}
+                    type="button"
+                    onClick={() => navigate("/register")}
+                >
+                    Register an account
+                </button>
             </form>
         </div>
     );
