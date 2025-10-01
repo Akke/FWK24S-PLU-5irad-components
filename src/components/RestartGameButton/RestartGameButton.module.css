@@ -1,5 +1,5 @@
 .restartButton {
-    background-color: var(--color-blue);
+    background-color: var(--secondary-accent);
     border: none;
     display: flex;
     align-items: center;
@@ -7,7 +7,7 @@
     height: 35px;
     width: 35px;
     border-radius: 50%;
-    color: white;
+    color: var(--secondary-button-text-color);
     cursor: pointer;
     font-size: 30px;
 }
