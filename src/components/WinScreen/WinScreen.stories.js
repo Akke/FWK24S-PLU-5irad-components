@@ -8,13 +8,13 @@ const meta = {
 export default meta
 
 export const Default = {
-    args: { message: "You won!" }
+    args: { message: "You won!", handleClose: () => console.log("closing dialog") }
 }
 
 export const Lose = {
-    args: { message: "You lost" }
+    args: { message: "You lost", handleClose: () => console.log("closing dialog") }
 }
 
 export const Draw = {
-    args: { message: "It's a draw" }
+    args: { message: "It's a draw", handleClose: () => console.log("closing dialog") }
 }
