@@ -61,7 +61,9 @@ export default function ContactForm() {
           <button
             type="button"
             className={styles.button}
-            onClick={() => setSent(true)}
+            onClick={() => {
+              setSent(true);
+            }}
           >
             Send message
           </button>
