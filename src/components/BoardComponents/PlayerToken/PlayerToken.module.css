@@ -12,9 +12,17 @@
 }
 
 .playerOne {
-    color: #41C9E4;
+    color: var(--player-token-cross);
+}
+
+.playerOne :hover {
+    color: var(--player-token-cross-hover);
 }
 
 .playerTwo {
-    color: #FF33EE;
+    color: var(--player-token-circle);
+}
+
+.playerTwo :hover {
+    color: var(--player-token-circle-hover);
 }
