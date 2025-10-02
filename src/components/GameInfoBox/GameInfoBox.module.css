@@ -1,5 +1,5 @@
 .gameInfoContainer {
-    background: var(--input-bg-color);
+    background: var(--main-content-container-bg-color);
     border-radius: 6px;
     border: 1px solid var(--input-border-color);
     padding: 10px 0;
