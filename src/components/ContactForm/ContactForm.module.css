@@ -1,118 +1,136 @@
 .card {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 900px;
-    margin: 3rem auto 5rem;
-    background: var(--main-content-container-bg-color);
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 900px;
+  margin: 3rem auto 5rem;
+  background: var(--main-content-container-bg-color);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 @media (min-width: 768px) {
-    .card {
-        grid-template-columns: minmax(320px, 42%) 1fr;
-    }
+  .card {
+    grid-template-columns: minmax(320px, 42%) 1fr;
+  }
 }
 
 .meta {
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 @media (min-width: 768px) {
-    .meta {
-        border-right: 1px solid var(--divider-border-color);
-    }
+  .meta {
+    border-right: 1px solid var(--divider-border-color);
+  }
 }
 
 .title {
-    font-family: "Unbounded", var(--font-family);
-    font-weight: 700;
-    font-size: clamp(1.35rem, 1rem + 1.05vw, 1.75rem);
-    line-height: 1.2;
-    margin: 0;
-    margin-top: 0.5rem;
-    text-wrap: balance;
+  font-family: "Unbounded", var(--font-family);
+  font-weight: 700;
+  font-size: clamp(1.35rem, 1rem + 1.05vw, 1.75rem);
+  line-height: 1.2;
+  margin: 0;
+  margin-top: 0.5rem;
+  text-wrap: balance;
 }
 
 .lede {
-    margin: 4px 0 0;
-    margin-top: 0.5rem;
-    line-height: 1.6;
-    opacity: 0.9;
-    max-width: 38ch;
+  margin: 4px 0 0;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 38ch;
 }
 
 .form {
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+  max-width: 500px;
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .field {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form input,
 .form textarea {
-    width: 100%;
-    min-height: 46px;
-    padding: 0.65rem 0.75rem;
-    border: 1px solid var(--input-border-color);
-    border-radius: 4px;
-    background: color-mix(in srgb, var(--bg-color) 85%, #fff 15%);
-    color: inherit;
-    font: inherit;
-    line-height: 1.35;
+  width: 100%;
+  min-height: 46px;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--bg-color) 85%, #fff 15%);
+  color: inherit;
+  font: inherit;
+  line-height: 1.35;
 }
 
 .form textarea {
-    resize: none;
-    min-height: 150px;
+  resize: none;
+  min-height: 150px;
 }
 
 .form input:focus-visible,
 .form textarea:focus-visible {
-    outline: none;
-    border-color: var(--accent);
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
 }
 
 .form input::placeholder,
 .form textarea::placeholder {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .button {
-    margin-top: 14px;
-    width: 100%;
-    min-height: 46px;
-    background: var(--accent);
-    color: var(--secondary-button-text-color);
-    font-weight: 700;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 120ms ease-in-out, transform 80ms ease;
+  margin-top: 14px;
+  width: 100%;
+  min-height: 46px;
+  background: var(--accent);
+  color: var(--secondary-button-text-color);
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 120ms ease-in-out, transform 80ms ease;
 }
 
 .button:hover {
-    background: var(--accent-hover);
+  background: var(--accent-hover);
 }
 
 .button:active {
-    transform: translateY(1px);
+  transform: translateY(1px);
 }
 
 @media (max-width: 480px) {
+  .meta,
+  .form {
+    padding: 22px;
+  }
+}
 
-    .meta,
-    .form {
-        padding: 22px;
-    }
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
