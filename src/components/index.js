@@ -5,7 +5,6 @@ export * from "./BoardComponents/BoardSquare";
 export * from "./BoardComponents/PlayerToken";
 export * from './ContactForm';
 export * from "./CreateNewGameButton";
-export * from "./EndGameButton";
 export * from "./Footer";
 export * from "./GameInfoBox";
 export * from "./Menu";

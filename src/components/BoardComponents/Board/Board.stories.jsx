@@ -1,9 +1,17 @@
 import Menu from '../../Menu/Menu';
 import Board from './Board';
+import BoardProvider from '../../../mock/BoardProvider';
 
 const meta = {
   title: 'Board/Board',
   component: Board,
+  decorators: [
+    (Story) => (
+      <BoardProvider>
+        <Story />
+      </BoardProvider>
+    ),
+  ],
 };
 
 const tilesEmpty = [

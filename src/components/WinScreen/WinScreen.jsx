@@ -1,13 +1,13 @@
 import styles from './WinScreen.module.css'
 import RestartGameButton from '../RestartGameButton/RestartGameButton'
 
-const WinScreen = () => {
+const WinScreen = ({ message, handleClose }) => {
     return (
         <div className={styles.overlay}>
             <div className={styles.container}>
-                <button className={styles.button}>✖</button>
+                <button className={styles.button} onClick={handleClose}>✖</button>
                 <div className={styles.content}>
-                    <h1 className={styles.text}>You won!</h1>
+                    <h1 className={styles.text}>{message}</h1>
                     <RestartGameButton className={styles.restartBtn} />
                 </div>
             </div>

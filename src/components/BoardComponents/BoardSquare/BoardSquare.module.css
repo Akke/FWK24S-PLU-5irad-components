@@ -9,10 +9,10 @@
     height: 30px;
     border-radius: 4px;
     cursor: pointer;
-    border: 2px solid hsl(336, 72%, 95%);
-    background: linear-gradient(to bottom, #fff, hsl(336, 72%, 95%));
+    border: var(--board-square-border);
+    background: var(--board-square-bg);
 }
 
 .coinContainer:hover {
-    box-shadow: 0 0 8px rgba(233, 121, 166, 0.2) inset;
+    box-shadow: var(--border-square-box-shadow);
 }

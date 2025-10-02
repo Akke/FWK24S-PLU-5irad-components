@@ -12,11 +12,12 @@
 
 .text{
     font-family: var(--var-font-family);
-    color: #41C9E4;
+    color: var(--accent);
 }
+
 .container {
   position: relative;             
-  background-color: #FFFFFF;
+  background-color: var(--toaster-bg-color);
   border-radius: 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   text-align: center;
