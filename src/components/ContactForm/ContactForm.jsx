@@ -3,6 +3,24 @@ import styles from "./ContactForm.module.css";
 
 export default function ContactForm() {
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const form = e.currentTarget;
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      setSent(true);
+      form.reset();
+    }, 1500);
+  }
 
   return (
     <section className={styles.card}>
@@ -27,7 +45,10 @@ export default function ContactForm() {
           </button>
         </div>
       ) : (
-        <form className={styles.form}>
+        <form
+          className={styles.form}
+          onSubmit={handleSubmit}
+        >
           <div className={styles.field}>
             <input
               name="name"
@@ -59,13 +80,11 @@ export default function ContactForm() {
           </div>
 
           <button
-            type="button"
+            type="submit"
             className={styles.button}
-            onClick={() => {
-              setSent(true);
-            }}
+            disabled={loading}
           >
-            Send message
+            {loading ? <span className={styles.spinner} /> : "Send message"}
           </button>
         </form>
       )}
